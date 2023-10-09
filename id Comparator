@@ -1,0 +1,6 @@
+public class id_comparator implements Comparator<student>{
+    public int compare(student o1,student o2){
+        return o1.getId() - o2.getId();
+    }
+    
+}
