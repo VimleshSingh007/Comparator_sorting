@@ -1,0 +1,54 @@
+public class student{
+    private String name;
+    private String address;
+    private int id;
+    private int pin;
+
+    public student(String name, String address, int id, int pin) {
+        this.name = name;
+        this.address = address;
+        this.id = id;
+        this.pin = pin;
+    }
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setPin(int pin) {
+        this.pin = pin;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public int getPin() {
+        return pin;
+    }
+
+    @Override
+    public String toString() {
+        return "student{" + "name=" + name + ", address=" + address + ", id=" + id + ", pin=" + pin + '}';
+    }
+    
+    
+    
+}
