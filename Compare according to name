@@ -1,0 +1,11 @@
+public class name_comparator implements Comparator<student>{
+    @Override
+    public int compare(student s1,student s2){
+        String p1=s1.getName();
+        String p2=s2.getName();
+        //in string comparision there is use to compareTo method and compare it
+        return p1.compareTo(p2);
+                
+    }
+    
+}
