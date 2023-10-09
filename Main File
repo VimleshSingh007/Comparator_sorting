@@ -1,0 +1,25 @@
+public class java {
+    public static void main(String[] args) {
+        ArrayList<student> list=new ArrayList<>();
+        
+        list.add(new student("aman","satna",1,123203));
+        list.add(new student("sanjay","rewa",12,120989));
+        list.add(new student("nanhe","Bhopal",102,909089));
+        list.add(new student("rahul","delhi",120,908987));
+        list.add(new student("ajay","indore",192,789890));
+        list.add(new student("vimlesh","datiya",192,789890));
+        list.add(new student("kiran","mumbai",192,789890));
+        list.add(new student("sanjeev","Amara",192,789890));
+        list.add(new student("ajay","ambala",192,789890));
+        
+        Collections.sort(list,new address_comparator());
+        Iterator itr=list.iterator();
+        while(itr.hasNext()){
+            student s=(student)itr.next();
+            System.out.println(s);
+        }
+        
+        
+    }
+    
+}
