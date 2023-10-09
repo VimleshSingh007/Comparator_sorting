@@ -11,7 +11,19 @@ public class java {
         list.add(new student("kiran","mumbai",192,789890));
         list.add(new student("sanjeev","Amara",192,789890));
         list.add(new student("ajay","ambala",192,789890));
+
+
+//if we want to short the records by using id then use this 
+        id_comparator id_com=new id_comparator();
+        Collection.sort(list,id_com);
+
+// if we want to shoryt the record by using name then use this      
+        name_comparator name_comp=new name_comparator();
+
+//if we want short the record using pin then use this 
+        pin_comparator pin_comp=new pin_comparator();
         
+// by this it is short the record using this as the address
         Collections.sort(list,new address_comparator());
         Iterator itr=list.iterator();
         while(itr.hasNext()){
